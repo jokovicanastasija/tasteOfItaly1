@@ -88,6 +88,9 @@
     #text{
         margin-bottom: 20px;
     }
+    #slider-item-content{
+        padding-top: 70px;
+    }
 }
 
 @media screen and (max-width: 320px){
