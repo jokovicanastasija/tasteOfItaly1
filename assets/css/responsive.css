@@ -1,0 +1,101 @@
+@media screen and (max-width: 1080px){
+    #navigation {
+        text-align: right;
+    }
+    #navigationUl {
+        display: none;
+        text-align: right;
+        margin-top: 20px;
+    }
+    #collapse-button{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1081px){
+    #navigationUl {
+        display: flex !important;
+        justify-content: space-between !important;
+    } 
+}
+
+@media screen and (max-width: 950px){
+    #slider-container{
+        height: 470px;
+    }
+    #slider-item-content{
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 840px){
+    #slider-container{
+        height: 420px;
+    }
+    #slider-item-content{
+        padding-top: 80px;
+    }
+    #text{
+        font-size: 16px;
+    }
+    #small-title{
+        font-size: 70px;
+    }
+    #big-title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #text{
+        margin-bottom: 50px;
+    }
+    #slider-container{
+        height: 320px;
+    }
+    #slider-item-content{
+        padding-top: 70px;
+    }
+    #small-title{
+        font-size: 60px;
+    }
+    #big-title {
+        font-size: 40px;
+    }
+    #about-us-heading{
+        padding-top: 70px;
+    }
+    #about-us-content{
+        padding-top: 70px;
+    }
+    h3{
+        font-size: 2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    #small-title{
+        font-size: 50px;
+    }
+    #big-title {
+        font-size: 30px;
+    }
+    #slider-container{
+        height: 300px ;
+    }
+    #text{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #logo{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    #slider-item-content{
+        padding-top: 50px;
+    }
+}
