@@ -291,7 +291,8 @@ function checkReservationData(){
         phone.value = "";
         people.selectedIndex = 0;
         date.value = "";
-    }
+        $("#resMessage).value = "";
+       }
 }
 
 //Chefs
