@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Looking for good Italian food? You are at the right place. Taste of Italy is restaurant who maintain the tradition of prepairing Italian cuisine."/>
+    <meta name="keywords" content="italian food cuisine pizza pasta"/>
     <title>Taste Of Italy</title>
 
     <!--FAV ICON-->
@@ -15,18 +17,16 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
     <!--Style-->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.min.css" type="text/css"/>
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
     
 </head>
 <body>
@@ -40,8 +40,12 @@
       <div id="header">
           <div class="container ">
             <div class="row justify-content-between">
-                <h1 id="logo" class="col-9 col-lg-3"> <a href="index.html"> <span id="logo-span" class="tangerine-font">taste of</span>Italy </a></h1>
-                <div id="navigation" class="col-lg-8 col-3 text-right">
+                <h1 id="logo" class="col-6 col-lg-3"> <a href="index.html"> 
+                  <div class="row">
+                  <span id="logo-span" class="tangerine-font col-12 col-md-2 col-lg-3 logo-part">taste of</span><span class="col-12 col-md-2 col-lg-3 logo-part">Italy</span> 
+                  </div>
+                </a></h1>
+                <div id="navigation" class="col-lg-8 col-6 ">
                   <button type="button" id="collapse-button">
                       <i class="fa fa-navicon"></i>
                     </button>
@@ -60,10 +64,10 @@
               <span id="small-title" class="tangerine-font"></span>
               <h2 id="big-title"></h2>
               <p id="text"></p>
-              <ul id="slider-dots" class="d-flex justify-content-between">
-                <li class="slider-dots-item"> </li>
-                <li class="slider-dots-item"> </li>
-                <li class="slider-dots-item"> </li>
+              <ul class=" dots d-flex justify-content-between">
+                <li class="dots-item"> </li>
+                <li class="dots-item"> </li>
+                <li class="dots-item"> </li>
               </ul>
             </div>
           </div>
@@ -73,8 +77,8 @@
     <!--ABOUT US-->
     <div id="aboutUs">
       <div class="container">
-        <div id="about-us-heading" class="text-center animation-element bounce-up">
-          <span class="tangerine-font" >Discover</span>
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Discover</span>
           <h3 class="text-uppercase">about us</h3>
         </div>
         <div id="about-us-content" class="row justify-content-between">
@@ -82,8 +86,11 @@
             <img src="assets/img/about-us.jpg" alt="Picture from about us section" class="img-fluid"/>
           </div>
           <div id="about-us-text" class="col-12 col-lg-5 text-center text-lg-right animation-element bounce-up" >
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of 
+            <p>We are family restaurant founded in 1960.</p>
+            <p>We maintain the tradition of preparing Italian food.</p>
+            <p>From day one, the emphasis has been on quality and freshness and the restaurant uses only high quality fresh Italian products.</p>
+            <p>All dishes are freshly prepared and cooked to order and served by friendly staff who will work hard to make your dining experience as enjoyable and memorable as possible. </p>
+            
           </div>
         </div>
       </div>
@@ -121,7 +128,254 @@
       </div>
     <!--END OF INFORMATION-->
 
+    <!--MENU-->
+    <div id="Menu">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Discover</span>
+          <h3 class="text-uppercase">our menu</h3>
+        </div>
+        <div id="menu-content" class="animation-element bounce-up heading">
+          <ul id="tabs-links" class="row justify-content-between pl-sm-5 pr-sm-5 ml-md-5 mr-md-5">
+            <li class="tabs-item col-5 col-lg-2 text-center ">
+              <a href="#breakfast" class="text-uppercase  ">breakfast</a>
+            </li>
+            <li class="tabs-item col-5 col-lg-2 text-center">
+              <a href="#meals" class="text-uppercase">meals</a>
+            </li>
+            <li class="tabs-item col-5  col-lg-2 text-center">
+              <a href="#desserts" class="text-uppercase">desserts</a>
+            </li>
+            <li class="tabs-item col-5  col-lg-2 text-center">
+              <a href="#drinks" class="text-uppercase">drinks</a>
+            </li>
+          </ul>
+          <div id="tabs">
+            <div id="breakfast" class="row justify-content-between">
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+            </div>
+
+            <div id="meals" class="row justify-content-between">
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+            </div>
+
+            <div id="desserts" class="row justify-content-between">
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+              </div>
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+            </div>
+
+            <div id="drinks" class="row justify-content-between">
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6"> 
+                <ul class="menu">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END OF MENU-->
+
+    <!--RESERVATION-->
+    <div id="Reservation">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Make A</span>
+          <h3 class="text-uppercase">reservation</h3>
+        </div>
+        <p class="animation-element bounce-up heading text-center">
+          Book a table and enjoy good company and even better food</p>
+        <div class="row animation-element bounce-up">
+          <div class="col-12 col-md-6 mb-5">
+            <form action="1.php" method="post" id="reservation-form" class="text-center">
+              <input type="text" name="firstName" id="firstName" placeholder="First Name" autocomplete="off"/>
+              <div class="errorPopup" id="error1"></div>
+              <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="off"/>
+              <div class="errorPopup" id="error2"></div>
+              <input type="email" name="email" id="email" placeholder="Email Name" autocomplete="off"/>
+              <div class="errorPopup" id="error3"></div>
+              <input type="text" name="phone" id="phone" placeholder="Phone Number" autocomplete="off"/>
+              <div class="errorPopup" id="error4"></div>
+              <select name="numbOfGuests" id="numbOfGuests">
+                <option value="0" id="option-0">How many people?</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                <option value="9">9 People</option>
+                <option value="10">10 People</option>
+              </select>
+              <div class="errorPopup" id="error5"></div>
+              <input type="date" name="date" id="date" autocomplete="off"/>
+              <div class="errorPopup" id="error6"></div>
+              <textarea name="resMessage" id="resMessage" rows="5" placeholder="Your Message" autocomplete="off"></textarea>
+              <button type="submit" id="resSubmit" class="sbm">Make reservation</button>
+              <p id="messageCorrectReservation"></p>
+            </form>
+          </div>
+          <div class="col-12 col-md-6">
+            <div id="opening-hours">
+              <div id="opening-hours-border">
+                <h3 class="text-center tangerine-font">Open Hours</h3>
+                <ul id="opening-hours-days">
+                  <li class="text-center">
+                      <p>Monday &amp; Tuesday</p>
+                      <p>9:00 AM - 4:00 PM</p>
+                  </li>
+                  <li class="text-center">
+                      <p>Wednesday &amp; Thursday</p>
+                      <p>9:00 AM - Midnight</p>
+                  </li>
+                  <li class="text-center">
+                      <p>Friday &amp; Saturday</p>
+                      <p>9:00 AM - Midnight</p>
+                  </li>
+                  <li class="text-center">
+                      <p>Sunday</p>
+                      <p>9:00 AM - 11:00 PM</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END OF RESERVATION-->
+
+    <!--OUR CHEFS-->
+    <div id="ourChefs" class="animation-element bounce-up heading">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Our Professional</span>
+          <h3 class="text-uppercase">master chefs</h3>
+        </div>
+        <div class="animation-element bounce-up row justify-content-between" id="chefs">
+        </div>
+      </div>
+    </div>
+    <!--END OF OUR CHEFS-->
+
+    <!--TESTIMONIALS-->
+    <div id="testimonials">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Testimonials</span>
+          <h2 class="text-uppercase">what customers say</h2>
+        </div>
+        <div class="text-center" id="testimonials-message">
+          <div id="testimonials-message-text"></div>
+          <ul class=" dots d-flex justify-content-between">
+            <li class="dots-item"> </li>
+            <li class="dots-item"> </li>
+            <li class="dots-item"> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--END OF TESTIMONIALS-->
+
+    <!--CONTACT-->
+    <div id="Contact">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Feel Free To</span>
+          <h3 class="text-uppercase">contact us</h3>
+        </div>
+        <div class="animation-element bounce-up row justify-content-center">
+          <div class="col-12 col-md-6 text-center">
+            <form action="1.php" method="post" id="contact-form">
+              <input type="text" id="contactName" name="contactName" placeholder="First Name" autocomplete="off"/>
+              <div class="errorPopup2" id="error7"></div>
+              <input type="text" id="contactLastName" name="contactLastName" placeholder="Last Name" autocomplete="off"/>
+              <div class="errorPopup2" id="error8"></div>
+              <input type="email" id="contactEmail" name="contactEmail" placeholder="Email" autocomplete="off"/>
+              <div class="errorPopup2" id="error9"></div>
+              <textarea name="contactMessage" id="contactMessage" rows="5" placeholder="Message" autocomplete="off"></textarea>
+              <div class="errorPopup2" id="error10"></div>
+              <button type="submit" id="contactSumbit" class="sbm">Send</button>
+              <p id="messageCorrectContact"></p>
+            </form>
+            <div id="social" class="mt-5">
+              <p>You can find us on social media</p>
+              <p id="socialIcons">
+                <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook m-3"></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram m-3"></i></a>
+                <a href="https://twitter.com/" target="blank"><i class="fa fa-twitter m-3"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END OF CONTACT-->
+
+    <!--AUTHOR-->
+    <div id="Author">
+      <div class="container">
+        <div class="text-center animation-element bounce-up heading">
+          <span class="tangerine-font heading-span" >Find Out Something</span>
+          <h3 class="text-uppercase">about author</h3>
+        </div>
+        <div class="row justify-content-around animation-element bounce-up">
+          <div class="col-md-3 col-12 text-md-left text-center">
+            <img src="assets/img/author.jpg" alt="Author"/>
+          </div>
+          <div class="col-md-8 col-12 text-md-left text-center p-5" id="textAuthor">
+            <p>My name is Anastasija Jokovic. I am curently a student at ICT College. My first experience with HTML was in high school and I was very interested. And that's why I picked this college.</p>
+            <p>I am working hard on learning new things about web development. Things that make me happy are reading books, hanging out with friends and family, traveling etc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END OF AUTHOR-->
     
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!--MAP-->
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2799.555989274317!2d12.325214519683724!3d45.43845113800977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI2JzE3LjkiTiAxMsKwMTknNDEuNCJF!5e0!3m2!1sen!2srs!4v1607615902719!5m2!1sen!2srs"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <!--END OF MAP-->
+
+    <!--FOOTER-->
+      <div id="footer" class="pt-3 pb-2">
+        <div class="container">
+          <p class="text-center">
+            copyright &copy; Anastasija Jokovic 2020 | All rights reserved
+          </p>
+          <p class="text-center"><a href="sitemap.xml" target="blank">sitemap</a>|<a href="robots.txt" target="blank">robots</a></p>
+        </div>
+      </div>
+    <!--END OF FOOTER-->
+    
+    
+    <script type="text/javascript" src="assets/js/main.min.js"></script>
 </body>
 </html>
