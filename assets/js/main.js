@@ -499,7 +499,7 @@ $(document).ready(function(){
     // Responsive navigation 
   
         $("#collapse-button").click(function (){
-            $("#navigationUl").slideToggle("slow");
+            $("#navigationUl").stop(true, true).slideToggle("slow");
         })
   
   
