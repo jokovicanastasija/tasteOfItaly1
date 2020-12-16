@@ -281,6 +281,7 @@ function checkReservationData(){
         document.querySelector("#error6").innerHTML = "";
     }
 
+    var messageReg = document.querySelector("#resMessage");
     var messageCorrect = document.querySelector("#messageCorrectReservation");
     messageCorrect.innerHTML = "";
     if(numberOfErrors == 0){
@@ -291,8 +292,8 @@ function checkReservationData(){
         phone.value = "";
         people.selectedIndex = 0;
         date.value = "";
-        $("#resMessage).value = "";
-       }
+        messageReg.value = "";
+    }
 }
 
 //Chefs
@@ -499,7 +500,7 @@ $(document).ready(function(){
     // Responsive navigation 
   
         $("#collapse-button").click(function (){
-            $("#navigationUl").stop(true, true).slideToggle("slow");
+            $("#navigationUl").stop(true,true).slideToggle("slow");
         })
   
   
